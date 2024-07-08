@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "surrealist"
+version = "0.1.0"
+description = ""
+authors = ["inaba1115 <inaba1115@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scipy = "^1.13.1"
+sounddevice = "^0.4.7"
+librosa = "^0.10.2.post1"
+samplerate = "^0.2.1"
+resampy = "^0.4.3"
+numpy = "1.26.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+mypy = "^1.10.0"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
